@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {    
+
+    .label-default {
+            margin-bottom: 0.5rem;
+            display: block;
+            font-size: .875rem;
+            line-height: 1.25rem;
+            font-weight: 500;
+            --tw-text-opacity: 1;
+            color: rgb(17 24 39 / var(--tw-text-opacity));
+        }
+
+                .input-default {
+                    display: block;
+                    width: 100%;
+                    border-radius: 0.5rem;
+                    border-width: 1px;
+                    --tw-border-opacity: 1;
+                    border-color: rgb(209 213 219 / var(--tw-border-opacity));
+                    padding: 0.625rem;
+                    --tw-text-opacity: 1;
+                    color: rgb(17 24 39 / var(--tw-text-opacity));
+                }
+
+    .main-content {
+            /* Subtract 80px from 100vh */
+            height: calc(100vh - 0px);
+        }
+
+    .scrollbar::-webkit-scrollbar {
+            width: 10px;
+            height: 20px;
+        }
+    
+        .scrollbar::-webkit-scrollbar-track {
+            border-radius: 100vh;
+            background: #f7f4ed;
+        }
+    
+        .scrollbar::-webkit-scrollbar-thumb {
+            background: #E5E7EB;
+            border-radius: 100vh;
+            border: 1px solid #f6f7ed;
+        }
+    
+        .scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #C5CCD9;
+        }
+
+    body {
+            font-family: "Open Sans", sans-serif;
+        }
+    
+    .btn-primary {
+        @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+    }
+    .table-parent{
+        @apply border-collapse w-full border-y border-slate-400 bg-white text-sm shadow-sm
+    }
+    .table-th {
+        @apply border first:border-l-0 last:border-r-0 border-slate-300 font-semibold px-4 py-3 text-slate-900 
+    }
+    .tbody-td{
+        @apply border first:border-l-0 last:border-r-0 border-slate-300 px-1 py-1 text-slate-500
+    }
+    .group-div{
+        @apply flex items-center w-full justify-between
+    }
+    .btn-btn {
+        @apply py-3 px-5 w-full text-base font-medium text-center text-white bg-gradient-to-br from-pink-500 to-violet-800 hover:scale-[1.02] shadow-md shadow-gray-300 transition-transform rounded-lg sm:w-auto
+    }
+    .activelink{
+        @apply from-blue-600 to-cyan-400
+    }
+}

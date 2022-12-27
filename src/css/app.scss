@@ -1,1 +1,100 @@
 // app global css in SCSS form
+// app global css in SCSS form
+
+
+$color4 : #764ba2;
+$color3 : #9FB6D1;
+$color2 : #376092;
+$color1 : #254061;
+
+.bg-minpas-1 {
+    background: $color1;
+}
+
+.color-minpas-1 {
+    color: $color1;
+}
+
+.bg-minpas-2 {
+    background: $color2;
+}
+
+.color-minpas-2 {
+    color: $color2;
+}
+
+.bg-minpas-3 {
+    background: $color3;
+}
+
+.color-minpas-3 {
+    color: $color3;
+}
+
+.bg-1 {
+    background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+}
+
+.bg-2 {
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(37, 145, 251, 0.98) 0.1%, rgba(0, 7, 128, 1) 99.8%);
+}
+
+.bg-3 {
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.bg-4 {
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.bg-5 {
+    background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
+}
+
+.bg-6 {
+    background-image: radial-gradient(circle 860px at 11.8% 33.5%, rgba(240, 30, 92, 1) 0%, rgba(244, 49, 74, 1) 30.5%, rgba(249, 75, 37, 1) 56.1%, rgba(250, 88, 19, 1) 75.6%, rgba(253, 102, 2, 1) 100.2%);
+}
+
+.bg-7 {
+    background: #e4fbfd;
+}
+
+.bg-8 {
+    background-image: radial-gradient(circle 976px at 51.2% 51%, rgba(11, 27, 103, 1) 0%, rgba(16, 66, 157, 1) 0%, rgba(11, 27, 103, 1) 17.3%, rgba(11, 27, 103, 1) 58.8%, rgba(11, 27, 103, 1) 71.4%, rgba(16, 66, 157, 1) 100.2%, rgba(187, 187, 187, 1) 100.2%);
+}
+
+.bg-9 {
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(0, 152, 155, 1) 0.1%, rgba(0, 94, 120, 1) 94.2%);
+}
+
+.bg-10 {
+    background: #ecfbfa !important;
+}
+
+
+.color-3 {
+    color: $color4
+}
+.color-4 {
+    color: radial-gradient(circle 860px at 11.8% 33.5%, rgba(240, 30, 92, 1) 0%, rgba(244, 49, 74, 1) 30.5%, rgba(249, 75, 37, 1) 56.1%, rgba(250, 88, 19, 1) 75.6%, rgba(253, 102, 2, 1) 100.2%);
+}
+
+.c-1 {
+    color: red;
+}
+
+.c-2 {
+    color: black;
+}
+
+.style-input,
+.q-field--labeled.q-field--dense .q-field__native,
+.q-field--labeled.q-field--dense .q-field__prefix,
+.q-field--labeled.q-field--dense .q-field__suffix {
+    color: $color4;
+    font-size: 11px !important;
+}
+
+.q-field--disabled .q-field__inner {
+    background: #3760920f;
+}
