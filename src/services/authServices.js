@@ -60,7 +60,7 @@ const getUserId = async (payload) => {
         storeError.handleErrorGlobal(e)
     }
 }
-const getUser = async (payload) => {
+const getUser = async () => {
     try {
         if (!store.data) {
             const { response } = await useEndPoint({ method: 'GET', endpoint: 'api/user-auth', type: 'gpNot' })

@@ -5,20 +5,21 @@
         <q-btn flat dense round icon="menu" aria-label="Menu" @click="toggleLeftDrawer" />
 
         <q-toolbar-title>
-          Quasar App
+          Control visita
         </q-toolbar-title>
 
-        <div>Quasar v{{ $q.version }}</div>
+        <q-btn color="red" text-color="white" size="sm" label="Cerrar Sesión" @click="cerrar()" />
       </q-toolbar>
     </q-header>
 
     <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
       <q-list>
         <q-item-label header>
-          Essential Links
+          Menu
         </q-item-label>
 
         <EssentialLink v-for="link in essentialLinks" :key="link.title" v-bind="link" />
+
       </q-list>
     </q-drawer>
 
@@ -30,7 +31,9 @@
 
 <script>
 import { defineComponent, ref } from 'vue'
+import { useRouter } from "vue-router";
 import EssentialLink from 'components/EssentialLink.vue'
+import { logout } from '../services/authServices'
 
 const linksList = [
   {
@@ -53,9 +56,18 @@ export default defineComponent({
   },
 
   setup() {
+    const router = useRouter();
     const leftDrawerOpen = ref(false)
 
+    const cerrar = async () => {
+      const res = await logout()
+      if (res.success) {
+        router.push("/")
+      }
+    }
+
     return {
+      cerrar,
       essentialLinks: linksList,
       leftDrawerOpen,
       toggleLeftDrawer() {

@@ -16,6 +16,7 @@ const routes = [
   },
   {
     path: "/panel-usuario",
+    meta: { requiresAuth: true },
     component: () => import('layouts/UserLayout.vue'),
     children: [
       { path: '', meta: { resource: 'Panel Usuario', mode: 'visitante' }, component: () => import('pages/HomeUser.vue') },
@@ -26,6 +27,7 @@ const routes = [
   },
   {
     path: "/panel-admin",
+    meta: { requiresAuth: true },
     component: () => import('layouts/AdminLayout.vue'),
     children: [
       { path: '', meta: { resource: 'Panel Administrador', mode: 'Tabla' }, component: () => import('pages/HomeAdmin.vue') },

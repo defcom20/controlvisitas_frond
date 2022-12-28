@@ -22,9 +22,9 @@
       </template>
       <q-btn size="sm" color="green" icon="mdi-filter-outline" label="Filtrar" class="q-mx-sm no-border" outline
         @click="showModalFilter()" />
-      <q-icon size="sm" color="green" name="mdi-microsoft-excel cursor-pointer" class="q-mx-sm" @click="exportExcel()">
+      <!-- <q-icon size="sm" color="green" name="mdi-microsoft-excel cursor-pointer" class="q-mx-sm" @click="exportExcel()">
         <q-tooltip class="bg-gray">Exportar Excel</q-tooltip>
-      </q-icon>
+      </q-icon> -->
       <q-icon size="sm" color="blue" name="mdi-refresh" class="q-mx-sm cursor-pointer" @click="updateTable()">
         <q-tooltip class="bg-gray">Actualizar Tabla</q-tooltip>
       </q-icon>

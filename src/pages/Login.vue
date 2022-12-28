@@ -7,7 +7,7 @@
             <div class="col">
               <q-card class="my-card shadow-10">
                 <q-card-section class="flex justify-between rounded-borders bg-3" style="padding: 6px 15px">
-                  <span style="font-size: 23px" class="text-white"> C.VISITAS </span>
+                  <span style="font-size: 23px" class="text-white"> LOGIN </span>
                   <div class="my-card color-minpas-1 rounded-borders"
                     style="background: white; padding: 1px 20px; height: max-content; margin-top: 8px; font-size: 11px;">
                     Admin Panel
@@ -61,7 +61,7 @@
 
           <div class="row">
             <div class="col text-center">
-              <q-item-label caption class="color-3">https://www.aeroprop.pe <br />
+              <q-item-label caption class="color-3">https://www.example.pe <br />
                 Todos los derechos reservados @2022</q-item-label>
             </div>
           </div>
